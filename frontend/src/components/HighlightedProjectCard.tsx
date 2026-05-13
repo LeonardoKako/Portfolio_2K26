@@ -48,8 +48,8 @@ const HighlightedProjectCard: React.FC<Props> = ({ project, index }) => {
           <Terminal className="text-outline-variant w-4 h-4 opacity-50" />
         </div>
 
-        <p className="font-body-md text-body-md text-on-surface-variant mb-lg line-clamp-2 h-10">
-          {project.description[language]}
+        <p className="font-body-md text-body-md text-on-surface-variant mb-lg leading-relaxed min-h-[3rem]">
+          {project.shortDescription[language]}
         </p>
 
         <div className="flex gap-xs flex-wrap">

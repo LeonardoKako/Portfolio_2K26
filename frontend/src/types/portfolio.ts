@@ -4,6 +4,7 @@ export interface Project {
   id: string;
   title: string;
   description: Record<Language, string>;
+  shortDescription: Record<Language, string>;
   stack: string[];
   image: string;
   githubUrl?: string;
