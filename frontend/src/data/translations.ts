@@ -3,9 +3,9 @@ export const translations = {
     nav: {
       projects: 'Projetos',
       about: 'Sobre',
-      skills: 'Habilidades',
       stack: 'Stack',
       contact: 'Contato',
+      skills: 'Skills & Stack',
       downloadCv: 'Baixar CV',
     },
     hero: {
@@ -58,15 +58,23 @@ export const translations = {
     },
     footer: {
       builtBy: '© 2024 CONSTRUÍDO PARA DURAR // PROJETADO POR K.FLEITH',
+    },
+    skills_page: {
+      title: 'ARSENAL TÉCNICO',
+      subtitle: 'Uma análise estruturada de competências principais, frameworks preferidos e ferramentas de infraestrutura.',
+      primaryStack: 'PRIMARY STACK',
+      complementary: 'COMPLEMENTARY ARSENAL',
+      coreTech: 'Core Tech',
+      since: 'Desde',
     }
   },
   'en-US': {
     nav: {
       projects: 'Projects',
       about: 'About',
-      skills: 'Skills',
       stack: 'Stack',
       contact: 'Contact',
+      skills: 'Skills & Stack',
       downloadCv: 'Download CV',
     },
     hero: {
@@ -119,6 +127,14 @@ export const translations = {
     },
     footer: {
       builtBy: '© 2024 BUILT-TO-LAST // ENGINEERED BY K.FLEITH',
+    },
+    skills_page: {
+      title: 'TECHNICAL ARSENAL',
+      subtitle: 'A structured breakdown of core competencies, preferred frameworks, and infrastructure tooling.',
+      primaryStack: 'PRIMARY STACK',
+      complementary: 'COMPLEMENTARY ARSENAL',
+      coreTech: 'Core Tech',
+      since: 'Since',
     }
   }
 };
