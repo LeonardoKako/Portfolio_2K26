@@ -53,6 +53,8 @@ export const translations = {
       errorCopy: 'Erro ao copiar e-mail.',
       status: 'aguardando_entrada',
       connection: 'segura',
+      instagram: 'SOCIAL NETWORK',
+      whatsapp: 'DIRECT MESSAGE',
     },
     footer: {
       builtBy: '© 2024 CONSTRUÍDO PARA DURAR // PROJETADO POR K.FLEITH',
@@ -112,6 +114,8 @@ export const translations = {
       errorCopy: 'Error copying email.',
       status: 'awaiting_input',
       connection: 'secure',
+      instagram: 'SOCIAL NETWORK',
+      whatsapp: 'DIRECT MESSAGE',
     },
     footer: {
       builtBy: '© 2024 BUILT-TO-LAST // ENGINEERED BY K.FLEITH',
