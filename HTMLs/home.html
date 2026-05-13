@@ -1,0 +1,502 @@
+<!doctype html>
+<html class="dark" lang="en" style="">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>K.FLEITH // DEV - Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&amp;family=Geist:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Cubano";
+        src: url("https://fonts.cdnfonts.com/s/15477/Cubano.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#739a79",
+              "inverse-on-surface": "#2c322e",
+              background: "#101412",
+              "error-container": "#93000a",
+              "on-primary-container": "#00311f",
+              "inverse-primary": "#006c49",
+              secondary: "#90d2d3",
+              "on-primary": "#003824",
+              primary: "#81d8ac",
+              surface: "#101412",
+              "surface-container-lowest": "#0a0f0d",
+              "on-tertiary-fixed": "#00210b",
+              "on-primary-fixed-variant": "#005236",
+              "on-error": "#690005",
+              "on-secondary-fixed-variant": "#004f50",
+              "on-secondary-container": "#85c7c8",
+              "on-surface": "#dfe4df",
+              "tertiary-fixed": "#c3edc7",
+              "on-background": "#dfe4df",
+              tertiary: "#a7d1ac",
+              "on-surface-variant": "#bec9c0",
+              "surface-tint": "#81d8ac",
+              "on-error-container": "#ffdad6",
+              "surface-container-high": "#262b28",
+              "surface-container-low": "#181d1a",
+              "on-tertiary-fixed-variant": "#2a4e33",
+              "surface-dim": "#101412",
+              "inverse-surface": "#dfe4df",
+              "secondary-fixed": "#abeeef",
+              "on-secondary": "#003738",
+              error: "#ffb4ab",
+              "primary-fixed": "#9df5c7",
+              "tertiary-fixed-dim": "#a7d1ac",
+              "primary-fixed-dim": "#81d8ac",
+              "outline-variant": "#3f4942",
+              "surface-container": "#1c211e",
+              "on-primary-fixed": "#002113",
+              "surface-bright": "#353a37",
+              "on-tertiary-container": "#0a3017",
+              outline: "#88938b",
+              "surface-container-highest": "#313633",
+              "on-secondary-fixed": "#002020",
+              "secondary-container": "#005556",
+              "surface-variant": "#313633",
+              "on-tertiary": "#12371e",
+              "primary-container": "#4aa178",
+              "secondary-fixed-dim": "#90d2d3",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              xs: "4px",
+              lg: "48px",
+              md: "24px",
+              gutter: "24px",
+              "container-max": "1280px",
+              sm: "12px",
+              base: "8px",
+              xl: "80px",
+            },
+            fontFamily: {
+              "headline-lg": ["Cubano"],
+              "body-md": ["Geist Sans"],
+              "headline-lg-mobile": ["Cubano"],
+              "label-sm": ["Geist Mono"],
+              "body-lg": ["Geist Sans"],
+              "headline-md": ["Cubano"],
+              "display-lg": ["Cubano"],
+            },
+            fontSize: {
+              "headline-lg": [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.03em",
+                  fontWeight: "900",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "1.6",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-lg-mobile": [
+                "32px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.03em",
+                  fontWeight: "900",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.1em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "1.7",
+                  letterSpacing: "0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "1.3",
+                  letterSpacing: "0.02em",
+                  fontWeight: "900",
+                },
+              ],
+              "display-lg": [
+                "72px",
+                {
+                  lineHeight: "1.1",
+                  letterSpacing: "0.05em",
+                  fontWeight: "900",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style data-stitch-cursor="">
+      * {
+        cursor: crosshair !important;
+      }
+      [contenteditable="true"]:focus,
+      .cursor-text:focus {
+        cursor: text !important;
+      }
+    </style>
+    <style data-stitch-scroll-lock="">
+      html,
+      body {
+        overflow: hidden !important;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col"
+  >
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-lg border-b border-outline/20"
+    >
+      <div
+        class="flex justify-between items-center w-full px-gutter h-xl max-w-container-max mx-auto"
+      >
+        <a
+          class="font-headline-md text-headline-md tracking-tighter text-primary"
+          href="#"
+          >K.FLEITH // DEV</a
+        >
+        <div class="hidden md:flex gap-md">
+          <a
+            class="text-primary font-bold border-b-2 border-primary pb-1 font-label-sm text-label-sm hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300"
+            href="#"
+            >Projects</a
+          >
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300 font-label-sm text-label-sm"
+            href="#"
+            >About</a
+          >
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300 font-label-sm text-label-sm"
+            href="#"
+            >Skills</a
+          >
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300 font-label-sm text-label-sm"
+            href="#"
+            >Stack</a
+          >
+          <a
+            class="text-on-surface-variant font-medium hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300 font-label-sm text-label-sm"
+            href="#"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center gap-md">
+          <button
+            class="text-primary hover:text-primary hover:drop-shadow-[0_0_10px_rgba(129,216,172,0.5)] transition-all duration-300 font-label-sm text-label-sm"
+          >
+            PT/EN
+          </button>
+          <button
+            class="hidden md:flex items-center gap-sm bg-primary text-on-primary px-4 py-2 rounded font-headline-md text-[14px] hover:shadow-[0_0_15px_rgba(129,216,172,0.3)] transition-shadow"
+          >
+            Download CV
+          </button>
+          <button class="md:hidden text-primary">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="flex-grow pt-[120px] pb-xl px-gutter max-w-container-max mx-auto w-full"
+    >
+      <section
+        class="mb-xl text-center md:text-left flex flex-col md:flex-row items-center gap-lg"
+      >
+        <div class="flex-1">
+          <h1 class="font-display-lg text-display-lg text-primary mb-md">
+            FULLSTACK DEVELOPER
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg"
+          >
+            Architecting robust digital solutions with an industrial-grade
+            approach. Blending heavy-duty engineering with precise, polished
+            aesthetics.
+          </p>
+          <div class="flex gap-md justify-center md:justify-start">
+            <button
+              class="bg-primary text-background font-headline-md text-headline-md px-md py-sm rounded hover:drop-shadow-[0_0_15px_rgba(129,216,172,0.3)] transition-all flex items-center gap-xs"
+            >
+              VIEW ALL PROJECTS
+              <span class="material-symbols-outlined" data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex-1 relative w-full aspect-square max-w-[500px] border border-outline/20 rounded-lg overflow-hidden group"
+        >
+          <div
+            class="absolute inset-0 bg-secondary/10 group-hover:bg-primary/5 transition-colors z-10 pointer-events-none"
+          ></div>
+          <img
+            alt="Abstract Code"
+            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+            data-alt="A macro shot of a sleek, modern mechanical keyboard with backlit keys emitting a subtle, cool-toned teal glow in a dark room. The lighting is dramatic and moody, casting deep shadows that emphasize the industrial design of the device. The composition is angled, suggesting high performance and precision engineering typical of a professional developer's workspace."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzopeYBIsKMD4VHogunepoOpGKl4VcTILKG7tKedaw-TRJ60oKZkOx3iirFxqXfBKOaysX7eE8_Bib0T3W_oI7BdAq4pzu1uqg1WWDqn95UCZZ-Yfkgc36gLb_8XCszzryHSBGHzl13lHPx9yB4aCDxcQjoqGIEVWPvcNLh4iVcwzEFYVdMEUAoTe8bTJX8GLS-G1pIrSb1CKJ1HjpgAzLpr8gwLQD_Yj0tEp_yzJYugSeUvDWka5AktsnTAD8pa84DH3rfIG01pb3"
+          />
+          <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+            <span
+              class="font-label-sm text-label-sm bg-surface-container/80 text-primary px-2 py-1 rounded border border-outline/20 backdrop-blur-sm"
+              >SYS.STATUS: ONLINE</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="mb-xl">
+        <h2
+          class="font-headline-lg text-headline-lg text-on-surface mb-lg border-b border-outline/20 pb-sm inline-block"
+        >
+          PROJETOS EM DESTAQUE
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+          <div
+            class="group relative bg-surface-variant border border-outline/20 rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors z-0 pointer-events-none"
+            ></div>
+            <div
+              class="relative h-48 border-b border-outline/20 overflow-hidden"
+            >
+              <img
+                alt="Server Rack"
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A highly detailed close-up of a modern server rack in a dark, climate-controlled data center. Subtle, cool-toned LED lights pulse along the hardware, casting a moody, technical glow. The metallic surfaces are rendered with sharp, industrial realism, emphasizing the structured, grid-like layout of the high-performance computing environment."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbaA8gI-UH6etQiCFLrWjsrxFcHLzc4NFf92YLAzlfEDgXrVDrOOyuCkqU1uykFCl28jKuZy3HdT0ZvjziVtsEeSN_PVisIhfSoDNEMPyrt4_48Ldb8Xfr2XgZKjsDLIczSe_usGNb9Czduf6qme9tz3ZyK0RoSh4OYKs7IdpdurESJChvtyVJEZKMWSGTGPm6xXp6Rs8VXNNBajuard5Hcv1Y-wU8nxRiNmlo-uaaUnC19SQ8NjAFfbx2aEbxmpbUQ2DNBYDI8q5"
+              />
+            </div>
+            <div class="p-md relative z-10">
+              <div class="flex justify-between items-start mb-sm">
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors"
+                >
+                  Critical Systems Infra
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="terminal"
+                  >terminal</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-md h-20 overflow-hidden"
+              >
+                High-availability backend architecture designed for zero
+                downtime. Built with Rust and Kubernetes for maximum resilience.
+              </p>
+              <div
+                class="flex gap-sm flex-wrap mt-auto opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >Rust</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >K8s</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >AWS</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative bg-surface-variant border border-outline/20 rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors z-0 pointer-events-none"
+            ></div>
+            <div
+              class="relative h-48 border-b border-outline/20 overflow-hidden"
+            >
+              <img
+                alt="Web App Interface"
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="A stylized, abstracted view of a sleek web application interface projected onto a dark glass surface. The design features sharp, minimalist geometric shapes and subtle, glowing teal accents against a deep, industrial black background. The lighting suggests a sophisticated, high-end digital environment, focusing on clean typography and structured layouts."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQsRunoo0zyoGXBKaqOsby75lJcpcPH-5l2qOcRyR5MYpd-GoaTzflTwterIuq2di2uJvA1IGM8eeKyPiZymtPW8OIfF6qkoEB4jXJoSGBFyb3zBx1EmH2RKVS18DnoltTPBABUaWflT-0YKnXPzRI4getcQQeLKRShAZlLkriQb7ewAzL73hzfRy2eP7j3TPpDgWea8v5i4N4GD14gmxlwjE6CQetxVOHUfS2qeCbXUrk6fAOdRlrU6W1eKfMSzOId0s1du-vGXqH"
+              />
+            </div>
+            <div class="p-md relative z-10">
+              <div class="flex justify-between items-start mb-sm">
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors"
+                >
+                  Design-Driven Web App
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="web"
+                  >web</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-md h-20 overflow-hidden"
+              >
+                A pixel-perfect, highly interactive frontend experience. Focused
+                on fluid motion and uncompromising accessibility.
+              </p>
+              <div
+                class="flex gap-sm flex-wrap mt-auto opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >React</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >Three.js</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >Framer Motion</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="group relative bg-surface-variant border border-outline/20 rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300"
+          >
+            <div
+              class="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors z-0 pointer-events-none"
+            ></div>
+            <div
+              class="relative h-48 border-b border-outline/20 overflow-hidden"
+            >
+              <img
+                alt="Enterprise Architecture"
+                class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
+                data-alt="An abstract visualization of complex data networks, depicted as glowing, interconnected nodes and sharp, structured lines in an industrial tech space. The scene is dominated by deep, stormy shadows and striking, neon-teal highlights. The composition evokes a sense of vast, scalable enterprise architecture operating with precision and speed."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAayGzYsPXS4RZN21HmgZUHdxCTN4NMDnsDRT6dG8HHR4qZWlYFrsCgVroQt3oqCOe3p_833A2FdwpK14stnR1U7S4jOV7o4VL7MMY9N_Qu4kvfC92hA6bx9O0UydlBcvfZ5_JlVAr0V5xO408_-bKW0_BmDRm8hZ-JaDMS9sVp3QyXEMlN-CAOzvOYukE0AXVB4HzwkQ0tJ7DXDoJ_mOXj_TWpfF41K3OMzUPvlUVpN4jCiRuilpaJqFXKRwkf4QVBx16v6YWOCca3"
+              />
+            </div>
+            <div class="p-md relative z-10">
+              <div class="flex justify-between items-start mb-sm">
+                <h3
+                  class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors"
+                >
+                  Fullstack Enterprise
+                </h3>
+                <span
+                  class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                  data-icon="architecture"
+                  >architecture</span
+                >
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-md h-20 overflow-hidden"
+              >
+                End-to-end B2B platform managing complex data pipelines and
+                providing real-time analytics dashboards.
+              </p>
+              <div
+                class="flex gap-sm flex-wrap mt-auto opacity-70 group-hover:opacity-100 transition-opacity"
+              >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >Node.js</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >PostgreSQL</span
+                >
+                <span
+                  class="font-label-sm text-label-sm bg-surface text-on-surface px-xs py-[2px] rounded border border-outline/30"
+                  >Vue</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-surface-container-lowest w-full py-md mt-xl border-t border-outline/10"
+    >
+      <div
+        class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-md"
+      >
+        <div class="font-headline-md text-headline-md text-primary">
+          K.FLEITH // DEV
+        </div>
+        <div class="flex gap-md font-label-sm text-label-sm">
+          <a
+            class="text-on-surface-variant hover:text-secondary transition-colors duration-200"
+            href="#"
+            >GitHub</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-secondary transition-colors duration-200"
+            href="#"
+            >LinkedIn</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-secondary transition-colors duration-200"
+            href="#"
+            >Terminal</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-secondary transition-colors duration-200"
+            href="#"
+            >System Status</a
+          >
+        </div>
+        <div
+          class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right"
+        >
+          © 2024 BUILT-TO-LAST // ENGINEERED BY K.FLEITH
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
