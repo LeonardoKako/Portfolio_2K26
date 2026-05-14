@@ -13,11 +13,11 @@ const Projects: React.FC = () => {
   return (
     <div className='max-w-container-max mx-auto px-gutter pb-xl pt-lg'>
       <header className='mb-xl animate-fade-up'>
-        <div className='border-l-[6px] border-primary pl-lg'>
+        <div className='border-l-[6px] border-primary pl-md md:pl-lg'>
           <span className='font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-sm block opacity-80'>
             {t.projects.selectedWorks}
           </span>
-          <h1 className='font-display-lg text-[4rem] md:text-[6rem] lg:text-[8rem] uppercase leading-[0.8] tracking-tighter'>
+          <h1 className='font-display-lg text-[2.5rem] md:text-[6rem] lg:text-[8rem] uppercase leading-[0.8] tracking-tighter'>
             {t.projects.heroTitle.split(" ")[0]}
             <br />
             <span className='text-outline-variant'>
