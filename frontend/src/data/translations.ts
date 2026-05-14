@@ -60,10 +60,10 @@ export const translations = {
       builtBy: '© 2024 CONSTRUÍDO PARA DURAR // PROJETADO POR K.FLEITH',
     },
     skills_page: {
-      title: 'ARSENAL TÉCNICO',
-      subtitle: 'Uma análise estruturada de competências principais, frameworks preferidos e ferramentas de infraestrutura.',
-      primaryStack: 'PRIMARY STACK',
-      complementary: 'COMPLEMENTARY ARSENAL',
+      title: 'MATRIZ OPERACIONAL',
+      subtitle: 'Uma análise de alto nível das tecnologias que sustentam minha arquitetura de engenharia.',
+      coreStack: 'CORE SYSTEMS',
+      complementary: 'ANOTHER SKILLS',
       coreTech: 'Core Tech',
       since: 'Desde',
     }
@@ -93,7 +93,7 @@ export const translations = {
         skill2Desc: 'Creating cohesive visual systems and brand guidelines.',
       },
       phase2: {
-        title: 'IT & INFRASTRUCTURE',
+        title: 'TI & INFRASTRUCTURE',
         description: 'Today, at Unicesusc, those principles translate to a different medium. Visual hierarchy became network topology; color theory became system health indicators.',
         skill1: 'NETWORK ARCHITECTURE',
         skill1Desc: 'Designing resilient, scalable infrastructure for uninterrupted service.',
@@ -101,7 +101,7 @@ export const translations = {
         skill2Desc: 'Proactive management and automation of critical server environments.',
       },
       intersection: {
-        title: 'THE INTERSECTION',
+        title: 'A INTERSEÇÃO',
         description: "The transition wasn't a pivot; it was an evolution. The core discipline remains the same: organizing complexity into elegant, functional systems.",
         tags: ['Problem Solving', 'System Architecture', 'Performance Optimization'],
       }
@@ -129,10 +129,10 @@ export const translations = {
       builtBy: '© 2024 BUILT-TO-LAST // ENGINEERED BY K.FLEITH',
     },
     skills_page: {
-      title: 'TECHNICAL ARSENAL',
-      subtitle: 'A structured breakdown of core competencies, preferred frameworks, and infrastructure tooling.',
-      primaryStack: 'PRIMARY STACK',
-      complementary: 'COMPLEMENTARY ARSENAL',
+      title: 'OPERATIONAL MATRIX',
+      subtitle: 'A high-level analysis of the technologies that underpin my engineering architecture.',
+      coreStack: 'CORE SYSTEMS',
+      complementary: 'ANOTHER SKILLS',
       coreTech: 'Core Tech',
       since: 'Since',
     }

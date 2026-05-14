@@ -1,4 +1,4 @@
-export type Language = 'pt-BR' | 'en-US';
+export type Language = "pt-BR" | "en-US";
 
 export interface Project {
   id: string;
@@ -24,7 +24,7 @@ export interface Experience {
 export interface Skill {
   id: string;
   name: string;
-  category: 'Frontend' | 'Backend' | 'Infra' | 'Design';
+  category: "Frontend" | "Backend" | "Database" | "Infra" | "Design";
   proficiency: number; // 0 to 100
   proficiencyDescription: Record<Language, string>;
   since?: string;
