@@ -5,6 +5,7 @@ import { projects } from "../translations/projects";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import PageTitle from "../components/PageTitle";
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
@@ -17,13 +18,13 @@ const Projects: React.FC = () => {
           <span className='font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-sm block opacity-80'>
             {t.projects.selectedWorks}
           </span>
-          <h1 className='font-display-lg text-[2.5rem] md:text-[6rem] lg:text-[8rem] uppercase leading-[0.8] tracking-tighter'>
+          <PageTitle>
             {t.projects.heroTitle.split(" ")[0]}
             <br />
             <span className='text-outline-variant'>
               {t.projects.heroTitle.split(" ")[1]}
             </span>
-          </h1>
+          </PageTitle>
         </div>
       </header>
 

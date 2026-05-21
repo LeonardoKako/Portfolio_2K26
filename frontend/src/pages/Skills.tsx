@@ -5,6 +5,7 @@ import { skills } from "../translations/skills";
 import StackCard from "../components/StackCard";
 import SkillCard from "../components/SkillCard";
 import { Layout, Server, Cpu, Layers } from "lucide-react";
+import PageTitle from "../components/PageTitle";
 
 const Skills: React.FC = () => {
   const { t } = useTranslation();
@@ -25,13 +26,13 @@ const Skills: React.FC = () => {
       {/* Page Header */}
       <header className='mb-2xl animate-fade-up relative'>
         <div className='absolute -left-gutter top-0 w-1.5 h-full bg-primary opacity-20'></div>
-        <h1 className='font-display-lg text-[4rem] md:text-[6rem] lg:text-[8rem] text-on-surface mb-sm tracking-tighter uppercase leading-[0.8]'>
+        <PageTitle className='mb-sm'>
           {t.skills_page.title.split(" ")[0]}
           <br />
           <span className='text-primary'>
             {t.skills_page.title.split(" ")[1]}
           </span>
-        </h1>
+        </PageTitle>
         <p className='font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l border-outline/20 pl-lg py-xs'>
           {t.skills_page.subtitle}
         </p>

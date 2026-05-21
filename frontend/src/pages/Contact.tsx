@@ -11,6 +11,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Button from "../components/ui/Button";
+import PageTitle from "../components/PageTitle";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -59,12 +60,12 @@ const Contact: React.FC = () => {
           <span className='font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-sm block opacity-80'>
             {t.contact.directTransmission}
           </span>
-          <h1 className='font-display-lg text-[3.5rem] md:text-[5rem] lg:text-[6rem] uppercase leading-[0.9] tracking-tighter mb-md'>
+          <PageTitle className='mb-md'>
             {t.contact.ctaTitle1}{" "}
             <span className='text-outline-variant opacity-50'>{t.contact.ctaTitle2}</span>
             <br />
             {t.contact.ctaTitle3} <span className='text-primary'>{t.contact.ctaTitle4}</span>
-          </h1>
+          </PageTitle>
           <p className='font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed'>
             {t.contact.subtitle}
           </p>

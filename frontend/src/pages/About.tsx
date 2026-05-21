@@ -3,6 +3,7 @@ import { useTranslation } from "../hooks/useTranslation";
 import { useSeo } from "../hooks/useSeo";
 import LogCard from "../components/LogCard";
 import { MapPin, History, Calendar, Activity } from "lucide-react";
+import PageTitle from "../components/PageTitle";
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -12,11 +13,11 @@ const About: React.FC = () => {
     <div className='max-w-container-max mx-auto px-gutter pb-xl pt-lg'>
       {/* Page Header */}
       <header className='mb-2xl animate-fade-up'>
-        <h1 className='font-display-lg text-[2.5rem] md:text-[7rem] lg:text-[9rem] text-on-surface mb-sm tracking-tighter uppercase leading-[0.8]'>
+        <PageTitle className='mb-sm'>
           {t.about.title1}
           <br />
           <span className='text-primary'>{t.about.title2}</span>
-        </h1>
+        </PageTitle>
         <p className='font-body-lg text-body-lg text-on-surface-variant max-w-3xl border-l border-outline/20 pl-lg py-xs'>
           {t.about.description}
         </p>
