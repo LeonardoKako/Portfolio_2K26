@@ -31,7 +31,7 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
                 {project.title}
               </h2>
               <span className="font-label-sm text-label-sm border border-outline/30 px-sm py-xs bg-surface/50">
-                2024
+                {project.date}
               </span>
             </div>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-lg leading-relaxed text-center sm:text-left">
@@ -45,20 +45,20 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
               ))}
             </div>
           </div>
-          
+
           <div className="mt-xl flex flex-col sm:flex-row gap-md">
-            <a 
-              href={project.githubUrl || '#'} 
-              target="_blank" 
+            <a
+              href={project.githubUrl || '#'}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-sm bg-surface-container-lowest border border-outline/20 text-on-surface font-headline-md text-headline-md py-sm rounded hover:bg-surface-container hover:border-primary/50 transition-all group/btn"
             >
               <Github className="w-5 h-5 group-hover/btn:text-primary transition-colors" />
               GITHUB REPO
             </a>
-            <a 
-              href={project.deployUrl || '#'} 
-              target="_blank" 
+            <a
+              href={project.deployUrl || '#'}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-sm bg-primary text-on-primary font-headline-md text-headline-md py-sm rounded hover:drop-shadow-[0_0_15px_rgba(129,216,172,0.4)] transition-all group/btn"
             >

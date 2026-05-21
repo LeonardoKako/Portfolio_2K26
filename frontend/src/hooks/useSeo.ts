@@ -10,7 +10,7 @@ export const useSeo = ({ title, description }: SeoProps = {}) => {
   const { language } = useTranslation();
 
   useEffect(() => {
-    const baseTitle = 'K.FLEITH // DEV';
+    const baseTitle = 'LEO FLEITH // DEV';
     document.title = title ? `${title} | ${baseTitle}` : baseTitle;
 
     if (description) {

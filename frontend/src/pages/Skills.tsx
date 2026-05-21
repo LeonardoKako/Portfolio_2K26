@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "../hooks/useTranslation";
 import { useSeo } from "../hooks/useSeo";
-import { skills } from "../data/skills";
+import { skills } from "../translations/skills";
 import StackCard from "../components/StackCard";
 import SkillCard from "../components/SkillCard";
 import { Layout, Server, Cpu, Layers } from "lucide-react";
@@ -97,10 +97,10 @@ const Skills: React.FC = () => {
       {/* Footer Industrial Accent */}
       <div className='mt-3xl pt-xl border-t border-outline/5 flex justify-between items-center opacity-30'>
         <div className='font-mono text-[10px] uppercase tracking-widest'>
-          Build_Log // Ver. 2.0.4
+          {t.skills_page.footer.buildLog}
         </div>
         <div className='font-mono text-[10px] uppercase tracking-widest'>
-          Hardware_Encrypted
+          {t.skills_page.footer.encrypted}
         </div>
       </div>
     </div>

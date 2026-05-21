@@ -9,6 +9,7 @@ export interface Project {
   image: string;
   githubUrl?: string;
   deployUrl?: string;
+  date: string;
   highlighted?: boolean;
 }
 

@@ -24,13 +24,13 @@ const Contact: React.FC = () => {
       platform: "GITHUB",
       url: "https://github.com/fleithkako",
       icon: Github,
-      label: "// REPOSITORIES",
+      label: t.contact.social.github,
     },
     {
       platform: "LINKEDIN",
       url: "https://linkedin.com/in/kfleith",
       icon: Linkedin,
-      label: "// PROFESSIONAL",
+      label: t.contact.social.linkedin,
     },
     {
       platform: "INSTAGRAM",
@@ -50,7 +50,7 @@ const Contact: React.FC = () => {
     <main className='min-h-screen pt-xl px-gutter max-w-container-max mx-auto w-full relative pb-xl'>
       {/* Background Decorative Element */}
       <div className='absolute top-0 right-0 font-mono text-[10px] text-primary/10 writing-vertical-rl hidden lg:block select-none h-full pt-xl'>
-        CONTACT_MODULE // EST. 2024 // CONNECTING_NODES
+        {t.contact.contactModule}
       </div>
 
       <div className='max-w-5xl mx-auto animate-fade-up'>
@@ -60,10 +60,10 @@ const Contact: React.FC = () => {
             {t.contact.directTransmission}
           </span>
           <h1 className='font-display-lg text-[3.5rem] md:text-[5rem] lg:text-[6rem] uppercase leading-[0.9] tracking-tighter mb-md'>
-            VAMOS{" "}
-            <span className='text-outline-variant opacity-50'>CONSTRUIR</span>
+            {t.contact.ctaTitle1}{" "}
+            <span className='text-outline-variant opacity-50'>{t.contact.ctaTitle2}</span>
             <br />
-            ALGO <span className='text-primary'>SÓLIDO</span>.
+            {t.contact.ctaTitle3} <span className='text-primary'>{t.contact.ctaTitle4}</span>
           </h1>
           <p className='font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed'>
             {t.contact.subtitle}
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
 
             <div className='flex flex-col items-center md:items-start text-center md:text-left overflow-hidden'>
               <span className='font-mono text-[10px] text-outline uppercase tracking-[0.2em] mb-xs'>
-                [ PROTOCOLO E-MAIL ]
+                {t.contact.emailProtocol}
               </span>
               <h2 className='font-display-lg text-[1.5rem] md:text-[2.2rem] text-on-surface truncate w-full'>
                 {email}
@@ -97,10 +97,10 @@ const Contact: React.FC = () => {
               <div className='flex items-center gap-md text-outline font-mono text-[10px] uppercase'>
                 <span className='flex items-center gap-1.5'>
                   <span className='w-1.5 h-1.5 rounded-full bg-primary animate-pulse'></span>
-                  ENCAMINHAMENTO SEGURO
+                  {t.contact.secureRouting}
                 </span>
                 <span className='w-px h-3 bg-outline/20'></span>
-                <span>RESPOSTA EM 24H</span>
+                <span>{t.contact.response24h}</span>
               </div>
             </div>
           </div>

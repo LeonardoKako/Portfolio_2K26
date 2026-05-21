@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "../hooks/useTranslation";
 import { useSeo } from "../hooks/useSeo";
-import { projects } from "../data/projects";
+import { projects } from "../translations/projects";
 import HighlightedProjectCard from "../components/HighlightedProjectCard";
 import Button from "../components/ui/Button";
 import { ArrowRight, Code2, Cpu, Globe, Terminal } from "lucide-react";
+import leoFoto from "../assets/bio/leo.jpg";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ const Home: React.FC = () => {
         <div className='flex-1 z-10'>
           <div className='border-l-[6px] border-primary pl-lg mb-lg'>
             <span className='font-label-sm text-label-sm text-primary uppercase tracking-[0.4em] mb-sm block opacity-80'>
-              EST. 2024 // PORTO ALEGRE, BR
+              {t.hero.est}
             </span>
             <h1 className='font-display-lg text-[4.5rem] md:text-[6.5rem] lg:text-[8.5rem] uppercase leading-[0.8] tracking-tighter animate-fade-up'>
               {t.hero.title.split(" // ")[0]}
@@ -43,22 +44,22 @@ const Home: React.FC = () => {
           <div className='flex items-center gap-lg animate-fade-up delay-200'>
             <div className='flex flex-col'>
               <span className='font-label-sm text-[10px] text-outline uppercase'>
-                Disponibilidade
+                {t.hero.availability}
               </span>
               <div className='flex items-center gap-2'>
                 <span className='w-2 h-2 rounded-full bg-primary animate-pulse'></span>
                 <span className='font-headline-sm text-headline-sm text-on-surface'>
-                  OPEN TO WORK
+                  {t.hero.openToWork}
                 </span>
               </div>
             </div>
             <div className='w-px h-10 bg-outline/20'></div>
             <div className='flex flex-col'>
               <span className='font-label-sm text-[10px] text-outline uppercase'>
-                Localização
+                {t.hero.locationLabel}
               </span>
               <span className='font-headline-sm text-headline-sm text-on-surface uppercase'>
-                Florianópolis, SC
+                {t.hero.location}
               </span>
             </div>
           </div>
@@ -69,21 +70,21 @@ const Home: React.FC = () => {
           <div className='absolute top-4 left-4 z-20 flex flex-col gap-2'>
             <div className='bg-surface/80 backdrop-blur-md border border-outline/20 p-2 font-mono text-[10px] text-primary flex items-center gap-2'>
               <Terminal className='w-3 h-3' />
-              USER_ID: K_FLEITH
+              USER_ID: lEO_FLEITH
             </div>
           </div>
 
           <div className='absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60'></div>
 
           <img
-            src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop'
+            src={leoFoto}
             alt='K. Fleith'
             className='w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100'
           />
 
           <div className='absolute bottom-6 right-6 z-20'>
             <div className='bg-primary text-background px-4 py-2 font-display-sm text-[14px] uppercase tracking-widest skew-x-[-12deg]'>
-              BUILD VERSION 1.0.4
+              {t.hero.buildVersion}
             </div>
           </div>
         </div>
@@ -128,14 +129,14 @@ const Home: React.FC = () => {
         <div className='flex flex-col md:flex-row justify-between items-end mb-xl gap-md'>
           <div className='border-l-[6px] border-primary pl-lg'>
             <span className='font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-sm block opacity-80'>
-              GALERIA DE PROJETOS
+              {t.hero.gallerySubtitle}
             </span>
             <h2 className='font-display-lg text-[3rem] md:text-[5rem] uppercase leading-none tracking-tighter'>
-              DESTACADOS
+              {t.hero.galleryTitle}
             </h2>
           </div>
           <div className='font-mono text-[10px] text-outline-variant hidden md:block uppercase'>
-            // LISTING TOP 3 SELECTED PRODUCTIONS
+            {t.hero.galleryListing}
           </div>
         </div>
 
@@ -156,7 +157,7 @@ const Home: React.FC = () => {
             icon={ArrowRight}
             className='min-w-[320px]'
           >
-            VER TODOS OS PROJETOS
+            {t.hero.viewAllProjects}
           </Button>
         </div>
       </section>
@@ -164,9 +165,9 @@ const Home: React.FC = () => {
       {/* Expertise Stats */}
       <section className='py-xl grid grid-cols-1 md:grid-cols-3 gap-px bg-outline/10 border border-outline/10 rounded overflow-hidden'>
         {[
-          { label: "PROJETOS COMPLETOS", value: "12+", icon: Globe },
-          { label: "ANOS DE EXPERIÊNCIA", value: "04+", icon: Cpu },
-          { label: "LINHAS DE CÓDIGO", value: "450K+", icon: Code2 },
+          { label: t.hero.stats.projects, value: "12+", icon: Globe },
+          { label: t.hero.stats.experience, value: "04+", icon: Cpu },
+          { label: t.hero.stats.codeLines, value: "450K+", icon: Code2 },
         ].map((stat, i) => (
           <div
             key={i}

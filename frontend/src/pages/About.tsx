@@ -13,9 +13,9 @@ const About: React.FC = () => {
       {/* Page Header */}
       <header className='mb-2xl animate-fade-up'>
         <h1 className='font-display-lg text-[2.5rem] md:text-[7rem] lg:text-[9rem] text-on-surface mb-sm tracking-tighter uppercase leading-[0.8]'>
-          {t.about.title.split(" // ")[0]}
+          {t.about.title1}
           <br />
-          <span className='text-primary'>{t.about.title.split(" // ")[1]}</span>
+          <span className='text-primary'>{t.about.title2}</span>
         </h1>
         <p className='font-body-lg text-body-lg text-on-surface-variant max-w-3xl border-l border-outline/20 pl-lg py-xs'>
           {t.about.description}
@@ -80,7 +80,7 @@ const About: React.FC = () => {
           </p>
 
           <div className='mt-2xl grid grid-cols-2 md:grid-cols-4 gap-md opacity-40'>
-            {["SYSTEMS", "DESIGN", "STABILITY", "RIGOR"].map((tag) => (
+            {t.about.narrative.tags.map((tag) => (
               <div
                 key={tag}
                 className='border border-outline/20 p-3 text-center'
@@ -98,7 +98,7 @@ const About: React.FC = () => {
       <section className='mb-5xl space-y-xl animate-fade-up delay-200'>
         <div className='flex items-end justify-between border-b border-primary/30 pb-4 mb-lg'>
           <h2 className='font-display-lg text-[2.5rem] md:text-[3.5rem] text-on-surface uppercase leading-none mt-lg'>
-            PROFESSIONAL <span className='text-primary'>LOG</span>
+            {t.about.professional_log.title1} <span className='text-primary'>{t.about.professional_log.title2}</span>
           </h2>
           <span className='font-mono text-[10px] text-outline hidden md:block tracking-widest uppercase'>
             {t.about.professional_log.version}
@@ -121,7 +121,7 @@ const About: React.FC = () => {
       <section className='space-y-xl animate-fade-up delay-300'>
         <div className='flex items-end justify-between border-b border-outline/30 pb-4 mb-lg'>
           <h2 className='font-display-lg text-[2.5rem] md:text-[3.5rem] text-on-surface uppercase leading-none  mt-lg'>
-            ACADEMIC <span className='text-outline'>LOG</span>
+            {t.about.academic_log.title1} <span className='text-outline'>{t.about.academic_log.title2}</span>
           </h2>
           <span className='font-mono text-[10px] text-outline hidden md:block tracking-widest uppercase'>
             {t.about.academic_log.version}
@@ -138,10 +138,10 @@ const About: React.FC = () => {
       {/* Footer Industrial Accent */}
       <div className='mt-4xl pt-xl border-t border-outline/5 flex justify-between items-center opacity-30'>
         <div className='font-mono text-[10px] uppercase tracking-widest'>
-          Bio_Update // Sync_Complete
+          {t.about.footer.sync}
         </div>
         <div className='font-mono text-[10px] uppercase tracking-widest'>
-          Hardware_Encrypted
+          {t.about.footer.encrypted}
         </div>
       </div>
     </div>

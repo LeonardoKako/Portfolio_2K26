@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "../hooks/useTranslation";
 import { useSeo } from "../hooks/useSeo";
-import { projects } from "../data/projects";
+import { projects } from "../translations/projects";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -49,20 +49,18 @@ const Projects: React.FC = () => {
           <div className='relative z-10 p-lg md:p-xl flex flex-col md:flex-row items-center justify-between gap-lg'>
             <div className='max-w-2xl'>
               <h2 className='font-display-lg text-[2.5rem] md:text-[4rem] leading-none mb-md uppercase tracking-tighter'>
-                PRONTO PARA <span className='text-primary'>CONSTRUIR</span> O
-                AMANHÃ?
+                {t.projects.cta.title1} <span className='text-primary'>{t.projects.cta.title2}</span> {t.projects.cta.title3}
               </h2>
               <p className='font-body-lg text-body-lg text-on-surface-variant'>
-                Disponível para consultoria arquitetural e funções de engenharia
-                sênior. Vamos transformar complexidade em sistemas elegantes.
+                {t.projects.cta.description}
               </p>
             </div>
 
             <Link
               to='/contact'
-              className='bg-primary text-background font-headline-md text-[18px] text-headline-md px-xl py-md rounded hover:drop-shadow-[0_0_25px_rgba(129,216,172,0.5)] hover:scale-105 transition-all flex items-center gap-md group/btn'
+              className='bg-primary text-background font-headline-md text-[18px] text-headline-md px-lg py-md rounded hover:drop-shadow-[0_0_25px_rgba(129,216,172,0.5)] hover:scale-105 transition-all flex items-center gap-md group/btn'
             >
-              INICIAR CONTATO
+              {t.projects.cta.button}
               <ArrowRight className='w-6 h-6 group-hover/btn:translate-x-2 transition-transform' />
             </Link>
           </div>

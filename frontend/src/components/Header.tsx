@@ -26,7 +26,7 @@ const Header: React.FC = () => {
     <nav className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-lg border-b border-outline/20">
       <div className="flex justify-between items-center w-full px-gutter h-xl max-w-container-max mx-auto">
         <Link to="/" className="font-headline-md text-headline-md tracking-tighter text-primary">
-          K.FLEITH // DEV
+          LEO FLEITH // DEV
         </Link>
 
         {/* Desktop Nav */}

@@ -1,5 +1,5 @@
 import { useAppStore } from '../store/useAppStore';
-import { translations } from '../data/translations';
+import { translations } from '../translations';
 
 export const useTranslation = () => {
   const { language } = useAppStore();

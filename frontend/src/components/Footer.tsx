@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className='bg-surface-container-lowest w-full py-md mt-xl border-t border-outline/10'>
       <div className='max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-md'>
         <div className='font-headline-md text-headline-md text-primary'>
-          K.FLEITH // DEV
+          LEO FLEITH // DEV
         </div>
 
         <div className='flex gap-md font-label-sm text-label-sm'>
