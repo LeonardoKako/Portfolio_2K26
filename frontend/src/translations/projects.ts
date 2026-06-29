@@ -15,7 +15,10 @@ export const projects: Project[] = [
     stack: ['NestJS', 'PostgreSQL', 'AWS', 'Docker'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArbaA8gI-UH6etQiCFLrWjsrxFcHLzc4NFf92YLAzlfEDgXrVDrOOyuCkqU1uykFCl28jKuZy3HdT0ZvjziVtsEeSN_PVisIhfSoDNEMPyrt4_48Ldb8Xfr2XgZKjsDLIczSe_usGNb9Czduf6qme9tz3ZyK0RoSh4OYKs7IdpdurESJChvtyVJEZKMWSGTGPm6xXp6Rs8VXNNBajuard5Hcv1Y-wU8nxRiNmlo-uaaUnC19SQ8NjAFfbx2aEbxmpbUQ2DNBYDI8q5',
     highlighted: true,
-    date: '12/2025'
+    date: '12/2025',
+    githubUrl: 'https://github.com/leonardoKako',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', // Placeholder de vídeo
+    deployUrl: 'https://github.com/leonardoKako' // Exemplo de deploy
   },
   {
     id: 'the-blog',
@@ -31,7 +34,9 @@ export const projects: Project[] = [
     stack: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAQsRunoo0zyoGXBKaqOsby75lJcpcPH-5l2qOcRyR5MYpd-GoaTzflTwterIuq2di2uJvA1IGM8eeKyPiZymtPW8OIfF6qkoEB4jXJoSGBFyb3zBx1EmH2RKVS18DnoltTPBABUaWflT-0YKnXPzRI4getcQQeLKRShAZlLkriQb7ewAzL73hzfRy2eP7j3TPpDgWea8v5i4N4GD14gmxlwjE6CQetxVOHUfS2qeCbXUrk6fAOdRlrU6W1eKfMSzOId0s1du-vGXqH',
     highlighted: true,
-    date: ''
+    date: '02/2026',
+    githubUrl: 'https://github.com/leonardoKako',
+    deployUrl: 'https://github.com/leonardoKako'
   },
   {
     id: 'chronos',
@@ -47,7 +52,9 @@ export const projects: Project[] = [
     stack: ['Node.js', 'PostgreSQL', 'React', 'TypeScript'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAayGzYsPXS4RZN21HmgZUHdxCTN4NMDnsDRT6dG8HHR4qZWlYFrsCgVroQt3oqCOe3p_833A2FdwpK14stnR1U7S4jOV7o4VL7MMY9N_Qu4kvfC92hA6bx9O0UydlBcvfZ5_JlVAr0V5xO408_-bKW0_BmDRm8hZ-JaDMS9sVp3QyXEMlN-CAOzvOYukE0AXVB4HzwkQ0tJ7DXDoJ_mOXj_TWpfF41K3OMzUPvlUVpN4jCiRuilpaJqFXKRwkf4QVBx16v6YWOCca3',
     highlighted: true,
-    date: ''
+    date: '08/2025',
+    githubUrl: 'https://github.com/leonardoKako',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   },
   {
     id: 'efood',
@@ -62,7 +69,9 @@ export const projects: Project[] = [
     },
     stack: ['React', 'TypeScript', 'D3.js'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAXY4yo1dgQpjlOXXDSqE5dJ8VmJxhkhn6J69zaTYNOfqJSMSA7Wvkj4RUtUsTK2kznz-pmqbMjzwuZm6rCc3r_jvCTMBv3aNHVlV1UX1e5oJ8MYB5ELD3USL4tDskQFn8bxE5tw4DHoj4OsAqItrnz7igvVNVGvLFlpc3cxhaRgVWcCpXfJD-_mzXs_duWqE0BqldEQGqht8p_XuwVRDG9Wo3V35Mq5N3a93YQG-z0wM9DxoiEM5PA6DhD9hOa0OHFU_h46Lrj7-pR',
-    date: ''
+    date: '05/2025',
+    githubUrl: 'https://github.com/leonardoKako',
+    deployUrl: 'https://github.com/leonardoKako'
   },
   {
     id: 'cantina-sesi',
@@ -77,6 +86,8 @@ export const projects: Project[] = [
     },
     stack: ['Go', 'Protobuf', 'Docker'],
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPToTUG_1ueZ194898wPGk6YmoUQ1dJw9_aBj5gbkE4y6fphGzckS8ayx6uQNi0jbmKTwx2SIjKvv9uLjOh7EVAHlJavFpQ0U2tPYwmSIY28xqKifLWW0oDnXgqWK5NVPHfleQHb8DBFnXcYcvwCITF_nq2y4izGMYMxVWYnW2w9hRoscmUdYC2TqiMDMwCLc4yTTvSA659oBRddRdwYFZwiRnbVPXFy0XLa1FXgjT5XhGfe3hxM970WxJNPvk1QHTJN-O9r7gfp_x',
-    date: ''
+    date: '10/2024',
+    githubUrl: 'https://github.com/leonardoKako',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   }
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Project } from '../types/portfolio';
 import { useTranslation } from '../hooks/useTranslation';
-import { ArrowUpRight, Github } from 'lucide-react';
+import { ArrowUpRight, Github, Play } from 'lucide-react';
 
 interface Props {
   project: Project;
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({ project, index }) => {
-  const { language } = useTranslation();
+  const { language, t } = useTranslation();
 
   return (
     <article
@@ -46,25 +46,40 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
             </div>
           </div>
 
-          <div className="mt-xl flex flex-col sm:flex-row gap-md">
-            <a
-              href={project.githubUrl || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-sm bg-surface-container-lowest border border-outline/20 text-on-surface font-headline-md text-headline-md py-sm rounded hover:bg-surface-container hover:border-primary/50 transition-all group/btn"
-            >
-              <Github className="w-5 h-5 group-hover/btn:text-primary transition-colors" />
-              GITHUB REPO
-            </a>
-            <a
-              href={project.deployUrl || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-sm bg-primary text-on-primary font-headline-md text-headline-md py-sm rounded hover:drop-shadow-[0_0_15px_rgba(129,216,172,0.4)] transition-all group/btn"
-            >
-              <ArrowUpRight className="w-5 h-5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-              LIVE DEMO
-            </a>
+          <div className="mt-xl flex flex-col sm:flex-row flex-wrap gap-md w-full">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 min-w-[120px] flex items-center justify-center gap-sm bg-surface-container-lowest border border-outline/20 text-on-surface font-headline-md text-headline-md py-sm rounded hover:bg-surface-container hover:border-primary/50 transition-all group/btn"
+              >
+                <Github className="w-5 h-5 group-hover/btn:text-primary transition-colors" />
+                {t.projects.githubBtn}
+              </a>
+            )}
+            {project.videoUrl && (
+              <a
+                href={project.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 min-w-[120px] flex items-center justify-center gap-sm bg-surface-container-lowest border border-outline/20 text-on-surface font-headline-md text-headline-md py-sm rounded hover:bg-surface-container hover:border-primary/50 transition-all group/btn"
+              >
+                <Play className="w-4 h-4 fill-current group-hover/btn:text-primary transition-colors" />
+                {t.projects.videoBtn}
+              </a>
+            )}
+            {project.deployUrl && (
+              <a
+                href={project.deployUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 min-w-[120px] flex items-center justify-center gap-sm bg-primary text-on-primary font-headline-md text-headline-md py-sm rounded hover:drop-shadow-[0_0_15px_rgba(129,216,172,0.4)] transition-all group/btn"
+              >
+                <ArrowUpRight className="w-5 h-5 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
+                {t.projects.demoBtn}
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@ export interface Project {
   image: string;
   githubUrl?: string;
   deployUrl?: string;
+  videoUrl?: string;
   date: string;
   highlighted?: boolean;
 }

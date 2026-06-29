@@ -5,6 +5,9 @@ export const projectsSection = {
     heroTitle: "DESENVOLVIMENTO WEB",
     viewArchitecture: "VER ARQUITETURA",
     exploreStack: "EXPLORAR STACK",
+    githubBtn: "REPOSITÓRIO",
+    videoBtn: "VER VÍDEO",
+    demoBtn: "VER DEPLOY",
     cta: {
       title1: "PRONTO PARA ",
       title2: "CONSTRUIR",
@@ -19,6 +22,9 @@ export const projectsSection = {
     heroTitle: "WEB DEVELOPMENT",
     viewArchitecture: "VIEW ARCHITECTURE",
     exploreStack: "EXPLORE STACK",
+    githubBtn: "GITHUB REPO",
+    videoBtn: "WATCH VIDEO",
+    demoBtn: "LIVE DEMO",
     cta: {
       title1: "READY TO ",
       title2: "BUILD",
