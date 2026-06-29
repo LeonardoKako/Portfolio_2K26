@@ -13,22 +13,18 @@ const Footer: React.FC = () => {
 
         <div className='flex gap-md font-label-sm text-label-sm'>
           <a
-            href='#'
+            href='https://github.com/leonardoKako/'
+            target="_blank"
             className='text-on-surface-variant hover:text-secondary transition-colors duration-200'
           >
             GitHub
           </a>
           <a
-            href='#'
+            href='https://www.linkedin.com/in/leonardo-jo%C3%A3o-fleith/'
+            target="_blank"
             className='text-on-surface-variant hover:text-secondary transition-colors duration-200'
           >
             LinkedIn
-          </a>
-          <a
-            href='#'
-            className='text-on-surface-variant hover:text-secondary transition-colors duration-200'
-          >
-            System Status
           </a>
         </div>
 

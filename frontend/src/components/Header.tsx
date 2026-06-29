@@ -18,8 +18,16 @@ const Header: React.FC = () => {
   ];
 
   const handleDownloadCv = () => {
-    const cvPath = language === 'pt-BR' ? '/CV_PT.pdf' : '/CV_EN.pdf';
-    window.open(cvPath, '_blank');
+    const isPt = language === 'pt-BR';
+    const cvFile = isPt ? '/CV_Portugues.pdf' : '/CV_English.pdf';
+    const cvName = isPt ? 'CV_Leonardo_Fleith_PT.pdf' : 'CV_Leonardo_Fleith_EN.pdf';
+
+    const link = document.createElement('a');
+    link.href = cvFile;
+    link.setAttribute('download', cvName);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
