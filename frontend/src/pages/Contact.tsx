@@ -23,25 +23,25 @@ const Contact: React.FC = () => {
   const socialLinks = [
     {
       platform: "GITHUB",
-      url: "https://github.com/fleithkako",
+      url: "https://github.com/leonardoKako",
       icon: Github,
       label: t.contact.social.github,
     },
     {
       platform: "LINKEDIN",
-      url: "https://linkedin.com/in/kfleith",
+      url: "https://www.linkedin.com/in/leonardo-jo%C3%A3o-fleith/",
       icon: Linkedin,
       label: t.contact.social.linkedin,
     },
     {
       platform: "INSTAGRAM",
-      url: "https://instagram.com/leokako",
+      url: "https://instagram.com/kako.fleith",
       icon: Instagram,
       label: `// ${t.contact.instagram}`,
     },
     {
       platform: "WHATSAPP",
-      url: "https://wa.me/5548988445100",
+      url: "https://wa.me/5548988352502",
       icon: MessageCircle,
       label: `// ${t.contact.whatsapp}`,
     },

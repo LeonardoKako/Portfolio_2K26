@@ -166,7 +166,7 @@ const Home: React.FC = () => {
       <section className='py-xl grid grid-cols-1 md:grid-cols-3 gap-px bg-outline/10 border border-outline/10 rounded overflow-hidden'>
         {[
           { label: t.hero.stats.projects, value: "12+", icon: Globe },
-          { label: t.hero.stats.experience, value: "04+", icon: Cpu },
+          { label: t.hero.stats.experience, value: "01+", icon: Cpu },
           { label: t.hero.stats.codeLines, value: "450K+", icon: Code2 },
         ].map((stat, i) => (
           <div

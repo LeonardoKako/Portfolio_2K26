@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Language = "pt-BR" | "en-US";
 
 export interface Project {
@@ -30,6 +32,7 @@ export interface Skill {
   proficiencyDescription: Record<Language, string>;
   since?: string;
   isCore?: boolean;
+  icon?: React.ComponentType<any>;
 }
 
 export interface SocialMedia {

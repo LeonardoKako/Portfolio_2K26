@@ -11,7 +11,7 @@ export const about = {
       location: "Florianópolis, SC",
       country: "Brasil",
       status: "Trabalhando",
-      experience: "2 Anos de Exp.",
+      experience: "1 Anos de Exp.",
     },
     narrative: {
       title: "NARRATIVA OPERACIONAL",
@@ -45,7 +45,7 @@ export const about = {
       version: "VER: 2026.02 // EDUCATION",
       entries: [
         {
-          date: "08/2024 — 08/2026",
+          date: "08/2024 — PRESENTE",
           role: "Análise e Des. de Sistemas",
           company: "CESUSC",
           description: "Graduação focada em fundamentos de computação, arquitetura de sistemas e desenvolvimento de software. Base sólida para construção de soluções tecnológicas robustas.",
@@ -81,7 +81,7 @@ export const about = {
       location: "Florianópolis, SC",
       country: "Brazil",
       status: "Working",
-      experience: "2 Years Exp.",
+      experience: "1 Years Exp.",
     },
     narrative: {
       title: "OPERATIONAL NARRATIVE",
@@ -115,7 +115,7 @@ export const about = {
       version: "VER: 2026.02 // EDUCATION",
       entries: [
         {
-          date: "08/2024 — 08/2026",
+          date: "08/2024 — PRESENT",
           role: "Systems Analysis and Dev.",
           company: "CESUSC",
           description: "Bachelor's degree focused on computing fundamentals, system architecture, and software development. Solid foundation for building robust technological solutions.",

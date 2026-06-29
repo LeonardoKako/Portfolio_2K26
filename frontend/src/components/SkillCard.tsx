@@ -1,48 +1,15 @@
 import React from 'react';
 import { Skill } from '../types/portfolio';
 import { useTranslation } from '../hooks/useTranslation';
-import { 
-  Globe, 
-  Code2, 
-  Layout, 
-  Terminal, 
-  Cpu, 
-  Database, 
-  GitBranch, 
-  Container, 
-  Cloud,
-  Layers,
-  Flame,
-  Figma
-} from 'lucide-react';
+import { Cpu } from 'lucide-react';
 
 interface Props {
   skill: Skill;
 }
 
-const getIcon = (id: string) => {
-  switch (id) {
-    case 'react':
-    case 'nextjs': return Globe;
-    case 'typescript': return Code2;
-    case 'tailwindcss': return Layout;
-    case 'nodejs': return Terminal;
-    case 'nestjs': return Cpu;
-    case 'postgresql':
-    case 'mongodb': return Database;
-    case 'git': return GitBranch;
-    case 'docker': return Container;
-    case 'aws': return Cloud;
-    case 'vue': return Layers;
-    case 'firebase': return Flame;
-    case 'figma': return Figma;
-    default: return Cpu;
-  }
-};
-
 const SkillCard: React.FC<Props> = ({ skill }) => {
   const { language } = useTranslation();
-  const Icon = getIcon(skill.id);
+  const Icon = skill.icon || Cpu;
 
   return (
     <div className="group bg-surface-container/50 border border-outline/10 p-md hover:bg-surface-container hover:border-primary/30 transition-all duration-300 relative overflow-hidden">

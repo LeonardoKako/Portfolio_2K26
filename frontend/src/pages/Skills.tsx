@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "../hooks/useTranslation";
 import { useSeo } from "../hooks/useSeo";
-import { skills } from "../translations/skills";
+import { mainSkills, anotherSkills } from "../translations/skills";
 import StackCard from "../components/StackCard";
 import SkillCard from "../components/SkillCard";
 import { Layout, Server, Cpu, Layers } from "lucide-react";
@@ -11,8 +11,8 @@ const Skills: React.FC = () => {
   const { t } = useTranslation();
   useSeo({ title: t.nav.skills });
 
-  const coreSkills = skills.filter((s) => s.isCore);
-  const otherSkills = skills.filter((s) => !s.isCore);
+  const coreSkills = mainSkills;
+  const otherSkills = anotherSkills;
 
   const stackCategories = [
     { id: "Frontend", icon: Layout },

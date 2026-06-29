@@ -1,53 +1,16 @@
 import React from "react";
 import { Skill } from "../types/portfolio";
 import { useTranslation } from "../hooks/useTranslation";
-import {
-  Code2,
-  Terminal,
-  Database,
-  Globe,
-  Cpu,
-  GitBranch,
-  Cloud,
-  Container,
-  Layout,
-} from "lucide-react";
+import { Cpu } from "lucide-react";
 
 interface Props {
   skill: Skill;
   index: number;
 }
 
-const getIcon = (id: string) => {
-  switch (id) {
-    case "react":
-    case "nextjs":
-      return Globe;
-    case "typescript":
-      return Code2;
-    case "tailwindcss":
-      return Layout;
-    case "nodejs":
-      return Terminal;
-    case "nestjs":
-      return Cpu;
-    case "postgresql":
-    case "mongodb":
-      return Database;
-    case "git":
-      return GitBranch;
-    case "docker":
-      return Container;
-    case "aws":
-      return Cloud;
-    default:
-      return Cpu;
-  }
-};
-
 const StackCard: React.FC<Props> = ({ skill, index }) => {
   const { language, t } = useTranslation();
-  const Icon = getIcon(skill.id);
+  const Icon = skill.icon || Cpu;
   const serial = `MOD-${String(index + 1).padStart(2, "0")}`;
 
   return (
