@@ -1,4 +1,13 @@
 import { Project } from '../types/portfolio';
+import mediaryImg from '../assets/projects/mediary.png';
+import formsUnicesuscImg from '../assets/projects/forms-unicesusc.vercel.app_.png';
+import scapAdminImg from '../assets/projects/scap-admin.png';
+import arteDigitalImg from '../assets/projects/arte-digital-floripa.vercel.app_.png';
+import nathyFormaturaImg from '../assets/projects/nathy-formatura.vercel.app_.png';
+import andreFormaturaImg from '../assets/projects/andre-bittencourt.vercel.app_.png';
+import chronosImg from '../assets/projects/chronos-leonardo.vercel.app_.png';
+import intranetImg from '../assets/projects/intranet.png';
+import theBlogImg from '../assets/projects/theblog.png';
 
 export const projects: Project[] = [
   {
@@ -13,7 +22,7 @@ export const projects: Project[] = [
       'en-US': 'Calendar-based health diary to record and monitor daily symptoms.'
     },
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Python', 'Supabase', 'Docker', 'Railway'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAXY4yo1dgQpjlOXXDSqE5dJ8VmJxhkhn6J69zaTYNOfqJSMSA7Wvkj4RUtUsTK2kznz-pmqbMjzwuZm6rCc3r_jvCTMBv3aNHVlV1UX1e5oJ8MYB5ELD3USL4tDskQFn8bxE5tw4DHoj4OsAqItrnz7igvVNVGvLFlpc3cxhaRgVWcCpXfJD-_mzXs_duWqE0BqldEQGqht8p_XuwVRDG9Wo3V35Mq5N3a93YQG-z0wM9DxoiEM5PA6DhD9hOa0OHFU_h46Lrj7-pR',
+    image: mediaryImg,
     highlighted: true,
     date: '02/2026',
     githubUrl: 'https://github.com/LeonardoKako/Mediary',
@@ -31,9 +40,9 @@ export const projects: Project[] = [
       'en-US': 'Academic event request system with automated email feedback.'
     },
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'NestJS', 'Prisma', 'PostgreSQL', 'Supabase', 'Docker'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArbaA8gI-UH6etQiCFLrWjsrxFcHLzc4NFf92YLAzlfEDgXrVDrOOyuCkqU1uykFCl28jKuZy3HdT0ZvjziVtsEeSN_PVisIhfSoDNEMPyrt4_48Ldb8Xfr2XgZKjsDLIczSe_usGNb9Czduf6qme9tz3ZyK0RoSh4OYKs7IdpdurESJChvtyVJEZKMWSGTGPm6xXp6Rs8VXNNBajuard5Hcv1Y-wU8nxRiNmlo-uaaUnC19SQ8NjAFfbx2aEbxmpbUQ2DNBYDI8q5',
+    image: formsUnicesuscImg,
     highlighted: true,
-    date: '12/2025',
+    date: '07/2026',
     githubUrl: 'https://github.com/LeonardoKako/Forms-Unicesusc',
     deployUrl: 'https://forms-unicesusc.vercel.app/'
   },
@@ -49,10 +58,45 @@ export const projects: Project[] = [
       'en-US': 'Corporate access control management with log simulator.'
     },
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Prisma', 'PostgreSQL', 'Docker'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAayGzYsPXS4RZN21HmgZUHdxCTN4NMDnsDRT6dG8HHR4qZWlYFrsCgVroQt3oqCOe3p_833A2FdwpK14stnR1U7S4jOV7o4VL7MMY9N_Qu4kvfC92hA6bx9O0UydlBcvfZ5_JlVAr0V5xO408_-bKW0_BmDRm8hZ-JaDMS9sVp3QyXEMlN-CAOzvOYukE0AXVB4HzwkQ0tJ7DXDoJ_mOXj_TWpfF41K3OMzUPvlUVpN4jCiRuilpaJqFXKRwkf4QVBx16v6YWOCca3',
+    image: scapAdminImg,
     highlighted: true,
-    date: '11/2025',
+    date: '05/2026',
     githubUrl: 'https://github.com/LeonardoKako/SCAP-Admin'
+  },
+  {
+    id: 'intranet-corporativa',
+    title: 'Intranet',
+    description: {
+      'pt-BR': 'Projeto inicial de um portal de intranet corporativa para centralização de tarefas, documentos e atividades internas do setor da empresa. Projeto atualmente pausado.',
+      'en-US': 'Initial stage of a corporate intranet portal for centralizing tasks, documents, and internal department activities. Project currently on hold.'
+    },
+    shortDescription: {
+      'pt-BR': 'Portal de intranet inicial para centralização de documentos e atividades.',
+      'en-US': 'Initial intranet portal for centralizing documents and activities.'
+    },
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'NestJS', 'TypeORM', 'PostgreSQL'],
+    image: intranetImg,
+    highlighted: false,
+    date: '12/2025',
+    githubUrl: 'https://github.com/LeonardoKako/Intranet'
+  },
+  {
+    id: 'chronos-pomodoro',
+    title: 'Chronos Pomodoro',
+    description: {
+      'pt-BR': 'Gerenciador de tarefas e foco utilizando a técnica Pomodoro. Oferece controle de configurações de tempos e cores, salvando todos os dados localmente no navegador.',
+      'en-US': 'Task and focus manager using the Pomodoro technique. Offers configurations for timers and theme colors, saving all data locally in the browser.'
+    },
+    shortDescription: {
+      'pt-BR': 'Timer de foco baseado na técnica Pomodoro com armazenamento local.',
+      'en-US': 'Focus timer based on the Pomodoro technique with local storage.'
+    },
+    stack: ['React', 'TypeScript', 'CSS'],
+    image: chronosImg,
+    highlighted: false,
+    date: '06/2025',
+    githubUrl: 'https://github.com/LeonardoKako/chronos-pomodoro',
+    deployUrl: 'https://andre-bittencourt.vercel.app/'
   },
   {
     id: 'arte-digital-floripa',
@@ -66,9 +110,9 @@ export const projects: Project[] = [
       'en-US': 'Landing page to showcase and manage digital art collections.'
     },
     stack: ['React', 'JavaScript', 'CSS', 'Node.js', 'Supabase'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAQsRunoo0zyoGXBKaqOsby75lJcpcPH-5l2qOcRyR5MYpd-GoaTzflTwterIuq2di2uJvA1IGM8eeKyPiZymtPW8OIfF6qkoEB4jXJoSGBFyb3zBx1EmH2RKVS18DnoltTPBABUaWflT-0YKnXPzRI4getcQQeLKRShAZlLkriQb7ewAzL73hzfRy2eP7j3TPpDgWea8v5i4N4GD14gmxlwjE6CQetxVOHUfS2qeCbXUrk6fAOdRlrU6W1eKfMSzOId0s1du-vGXqH',
+    image: arteDigitalImg,
     highlighted: false,
-    date: '01/2026',
+    date: '07/2026',
     githubUrl: 'https://github.com/LeonardoKako/Arte_Digital_Floripa',
     deployUrl: 'https://arte-digital-floripa.vercel.app/'
   },
@@ -84,28 +128,11 @@ export const projects: Project[] = [
       'en-US': 'Celebratory landing page for Dr. Nathalia Fleith\'s medical graduation.'
     },
     stack: ['React', 'TypeScript', 'Tailwind CSS'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPToTUG_1ueZ194898wPGk6YmoUQ1dJw9_aBj5gbkE4y6fphGzckS8ayx6uQNi0jbmKTwx2SIjKvv9uLjOh7EVAHlJavFpQ0U2tPYwmSIY28xqKifLWW0oDnXgqWK5NVPHfleQHb8DBFnXcYcvwCITF_nq2y4izGMYMxVWYnW2w9hRoscmUdYC2TqiMDMwCLc4yTTvSA659oBRddRdwYFZwiRnbVPXFy0XLa1FXgjT5XhGfe3hxM970WxJNPvk1QHTJN-O9r7gfp_x',
+    image: nathyFormaturaImg,
     highlighted: false,
-    date: '10/2025',
+    date: '02/2026',
     githubUrl: 'https://github.com/LeonardoKako/nathy-formatura',
     deployUrl: 'https://nathy-formatura.vercel.app/'
-  },
-  {
-    id: 'intranet-corporativa',
-    title: 'Intranet',
-    description: {
-      'pt-BR': 'Projeto inicial de um portal de intranet corporativa para centralização de tarefas, documentos e atividades internas do setor da empresa. Projeto atualmente pausado.',
-      'en-US': 'Initial stage of a corporate intranet portal for centralizing tasks, documents, and internal department activities. Project currently on hold.'
-    },
-    shortDescription: {
-      'pt-BR': 'Portal de intranet inicial para centralização de documentos e atividades.',
-      'en-US': 'Initial intranet portal for centralizing documents and activities.'
-    },
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'NestJS', 'TypeORM', 'PostgreSQL'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuArbaA8gI-UH6etQiCFLrWjsrxFcHLzc4NFf92YLAzlfEDgXrVDrOOyuCkqU1uykFCl28jKuZy3HdT0ZvjziVtsEeSN_PVisIhfSoDNEMPyrt4_48Ldb8Xfr2XgZKjsDLIczSe_usGNb9Czduf6qme9tz3ZyK0RoSh4OYKs7IdpdurESJChvtyVJEZKMWSGTGPm6xXp6Rs8VXNNBajuard5Hcv1Y-wU8nxRiNmlo-uaaUnC19SQ8NjAFfbx2aEbxmpbUQ2DNBYDI8q5',
-    highlighted: false,
-    date: '09/2025',
-    githubUrl: 'https://github.com/LeonardoKako/Intranet'
   },
   {
     id: 'formatura-andre',
@@ -119,9 +146,9 @@ export const projects: Project[] = [
       'en-US': 'Celebratory landing page for Dr. André Bittencourt\'s medical graduation.'
     },
     stack: ['React', 'TypeScript', 'Tailwind CSS'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPToTUG_1ueZ194898wPGk6YmoUQ1dJw9_aBj5gbkE4y6fphGzckS8ayx6uQNi0jbmKTwx2SIjKvv9uLjOh7EVAHlJavFpQ0U2tPYwmSIY28xqKifLWW0oDnXgqWK5NVPHfleQHb8DBFnXcYcvwCITF_nq2y4izGMYMxVWYnW2w9hRoscmUdYC2TqiMDMwCLc4yTTvSA659oBRddRdwYFZwiRnbVPXFy0XLa1FXgjT5XhGfe3hxM970WxJNPvk1QHTJN-O9r7gfp_x',
+    image: andreFormaturaImg,
     highlighted: false,
-    date: '10/2025',
+    date: '11/2025',
     githubUrl: 'https://github.com/LeonardoKako/formatura-andre',
     deployUrl: 'https://andre-bittencourt.vercel.app/'
   },
@@ -137,27 +164,9 @@ export const projects: Project[] = [
       'en-US': 'Fullstack interactive blog platform with authentication and database.'
     },
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'TypeORM', 'SQLite'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuQsRunoo0zyoGXBKaqOsby75lJcpcPH-5l2qOcRyR5MYpd-GoaTzflTwterIuq2di2uJvA1IGM8eeKyPiZymtPW8OIfF6qkoEB4jXJoSGBFyb3zBx1EmH2RKVS18DnoltTPBABUaWflT-0YKnXPzRI4getcQQeLKRShAZlLkriQb7ewAzL73hzfRy2eP7j3TPpDgWea8v5i4N4GD14gmxlwjE6CQetxVOHUfS2qeCbXUrk6fAOdRlrU6W1eKfMSzOId0s1du-vGXqH',
+    image: theBlogImg,
     highlighted: false,
-    date: '08/2025',
+    date: '05/2025',
     githubUrl: 'https://github.com/LeonardoKako/the-blog-nextjs'
-  },
-  {
-    id: 'chronos-pomodoro',
-    title: 'Chronos Pomodoro',
-    description: {
-      'pt-BR': 'Gerenciador de tarefas e foco utilizando a técnica Pomodoro. Oferece controle de configurações de tempos e cores, salvando todos os dados localmente no navegador.',
-      'en-US': 'Task and focus manager using the Pomodoro technique. Offers configurations for timers and theme colors, saving all data locally in the browser.'
-    },
-    shortDescription: {
-      'pt-BR': 'Timer de foco baseado na técnica Pomodoro com armazenamento local.',
-      'en-US': 'Focus timer based on the Pomodoro technique with local storage.'
-    },
-    stack: ['React', 'TypeScript', 'CSS'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAayGzYsPXS4RZN21HmgZUHdxCTN4NMDnsDRT6dG8HHR4qZWlYFrsCgVroQt3oqCOe3p_833A2FdwpK14stnR1U7S4jOV7o4VL7MMY9N_Qu4kvfC92hA6bx9O0UydlBcvfZ5_JlVAr0V5xO408_-bKW0_BmDRm8hZ-JaDMS9sVp3QyXEMlN-CAOzvOYukE0AXVB4HzwkQ0tJ7DXDoJ_mOXj_TWpfF41K3OMzUPvlUVpN4jCiRuilpaJqFXKRwkf4QVBx16v6YWOCca3',
-    highlighted: false,
-    date: '06/2025',
-    githubUrl: 'https://github.com/LeonardoKako/chronos-pomodoro',
-    deployUrl: 'https://andre-bittencourt.vercel.app/'
   }
 ];

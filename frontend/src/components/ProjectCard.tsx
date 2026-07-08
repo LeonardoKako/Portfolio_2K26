@@ -21,7 +21,7 @@ const ProjectCard: React.FC<Props> = ({ project, index }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover transition-all duration-700"
           />
         </div>
         <div className="lg:w-2/5 p-lg flex flex-col justify-between bg-surface-container-highest/50 backdrop-blur-sm">

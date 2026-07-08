@@ -51,6 +51,12 @@ export const about = {
           description: "Graduação focada em fundamentos de computação, arquitetura de sistemas e desenvolvimento de software. Base sólida para construção de soluções tecnológicas robustas.",
         },
         {
+          date: "10/2025 — 05/2026",
+          role: "Inglês para Desenvolvedores",
+          company: "DevSpeak Academy",
+          description: "Formação em inglês com foco intensivo em conversação, dinâmicas práticas e vocabulário técnico para o mercado global de tecnologia.",
+        },
+        {
           date: "08/2024 — 02/2025",
           role: "Desenvolvedor Front-end",
           company: "EBAC",
@@ -119,6 +125,12 @@ export const about = {
           role: "Systems Analysis and Dev.",
           company: "CESUSC",
           description: "Bachelor's degree focused on computing fundamentals, system architecture, and software development. Solid foundation for building robust technological solutions.",
+        },
+        {
+          date: "10/2025 — 05/2026",
+          role: "English for Developers",
+          company: "DevSpeak Academy",
+          description: "English training with an intensive focus on speaking, practical conversation dynamics, and technical vocabulary for the global tech market.",
         },
         {
           date: "08/2024 — 02/2025",
