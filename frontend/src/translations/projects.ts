@@ -44,7 +44,7 @@ export const projects: Project[] = [
     highlighted: true,
     date: '07/2026',
     githubUrl: 'https://github.com/LeonardoKako/Forms-Unicesusc',
-    deployUrl: 'https://forms-unicesusc.vercel.app/'
+    deployUrl: 'https://formularioeventos.unicesusc.edu.br'
   },
   {
     id: 'scap-admin',
@@ -61,6 +61,7 @@ export const projects: Project[] = [
     image: scapAdminImg,
     highlighted: true,
     date: '05/2026',
+    videoUrl: 'https://youtu.be/Bt42eIvcru4',
     githubUrl: 'https://github.com/LeonardoKako/SCAP-Admin'
   },
   {
@@ -78,6 +79,7 @@ export const projects: Project[] = [
     image: intranetImg,
     highlighted: false,
     date: '12/2025',
+    videoUrl: 'https://youtu.be/vYatGFRGcZI',
     githubUrl: 'https://github.com/LeonardoKako/Intranet'
   },
   {
