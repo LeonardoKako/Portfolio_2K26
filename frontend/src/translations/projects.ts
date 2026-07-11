@@ -44,7 +44,7 @@ export const projects: Project[] = [
     highlighted: true,
     date: '07/2026',
     githubUrl: 'https://github.com/LeonardoKako/Forms-Unicesusc',
-    deployUrl: 'https://formularioeventos.unicesusc.edu.br'
+    deployUrl: 'https://forms-unicesusc.vercel.app'
   },
   {
     id: 'scap-admin',
