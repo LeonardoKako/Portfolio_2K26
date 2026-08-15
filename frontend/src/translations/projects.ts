@@ -169,6 +169,7 @@ export const projects: Project[] = [
     image: theBlogImg,
     highlighted: false,
     date: '05/2025',
-    githubUrl: 'https://github.com/LeonardoKako/the-blog-nextjs'
+    githubUrl: 'https://github.com/LeonardoKako/the-blog-nextjs',
+    videoUrl: 'https://www.loom.com/share/71950973e3c34a519156d6bdf3e5612a?sid=98cbbd7a-8623-4d8e-a835-5ef32a864d6e'
   }
 ];
